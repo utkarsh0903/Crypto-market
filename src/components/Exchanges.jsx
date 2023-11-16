@@ -16,7 +16,7 @@ const Exchanges = () => {
     
     const fetchexchanges = async ()=>{
       try {
-        const {data} = await axios.get(`${server}/exchnges`)
+        const {data} = await axios.get(`${server}/exchanges`)
         setExchanges(data);
         setLoading(false);
       } catch (error) {
@@ -28,7 +28,7 @@ const Exchanges = () => {
 
   }, [])
 
-  if(error) return <ErrorComponent />
+  if(error) return <ErrorComponent message={"Error while fetching exchanges"}/>
   
   
   return <Container maxW={"container.xl"}>
