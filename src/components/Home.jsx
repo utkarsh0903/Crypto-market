@@ -14,7 +14,7 @@ const Home = () => {
         translateY:"20px"
       }}
       transition={{
-        duration:2,
+        duration:0.5,
         repeat:Infinity,
         repeatType:"reverse",
       }}
