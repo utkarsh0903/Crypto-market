@@ -14,7 +14,7 @@ const Home = () => {
         translateY:"20px"
       }}
       transition={{
-        duration:0.5,
+        duration:2,
         repeat:Infinity,
         repeatType:"reverse",
       }}
@@ -22,7 +22,7 @@ const Home = () => {
       <Image w={"full"} h={"76vh"} objectFit={"contain"} src={bitcoin} filter={"grayscale(1)"} />
       </motion.div>
       <Text fontSize={"6xl"} textAlign={"center"} fontWeight={"thin"} 
-        color={"whiteAlpha.700"} mt={"-20"}>CryptoX</Text>
+        color={"whiteAlpha.700"} mt={""}>CryptoX</Text>
     </Box>
   )
 }

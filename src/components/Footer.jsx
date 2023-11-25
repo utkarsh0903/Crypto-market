@@ -1,5 +1,6 @@
 import { Avatar, Box, Stack, Text, VStack } from '@chakra-ui/react'
-import React from 'react'
+import React from 'react';
+import profilePic from "../assests/profile-pic.png"
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
                         Best crypto trader in India, providing guidance at reasonable price.</Text>
                 </VStack>
                 <VStack>
-                    <Avatar boxSize={"28"} mt={["4", "0"]} />
+                    <Avatar boxSize={"28"} mt={["4", "0"]} src={profilePic} />
                     <Text>Our Founder</Text>
                 </VStack>
             </Stack>
