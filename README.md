@@ -1,3 +1,5 @@
+Project includes fetching real time data from Coingecko API and shares list of ranking of Exchanges and coins all over the world.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
