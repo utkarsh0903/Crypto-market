@@ -7,16 +7,16 @@ const Home = () => {
   
   return (
     <Box bgColor={"blackAlpha.900"} w={"full"} h={"85vh"} color={"white"}>
-      <HStack w={"full"} display={"flex"} justifyContent={"space-evenly"} >
-        <VStack display={"flex"} justifyContent={"center"}  >
-          <Text  w={"full"} h={"full"} fontSize={["20px","20px","30px","45px","60px", "70px"]} 
-              textTransform={"uppercase"} display={"flex"} justifyContent={"center"} >Always<br /> ready<br />
+      <HStack w={"full"} display={"flex"} justifyContent={"space-around"} >
+        <VStack h={"100%"}  >
+          <Text  w={"full"} h={"full"} fontSize={["25px","35px","45px","55px","65px", "65px"]} 
+             display={"flex"} justifyContent={"center"} textTransform={"uppercase"}
+             m={{base:"auto", xl : "0"}} >Always<br /> ready<br />
               to make your<br /> life better</Text>
-          <Text w={"full"} h={"full"} fontSize={["10px","27px"]}
-            display={"flex"} justifyContent={"center"}>Every step of the way</Text>
         </VStack>
         <motion.div style={{
           height:"80vh",
+          width:"50%"
         }} 
         animate={{
           translateY:"20px"
@@ -27,8 +27,8 @@ const Home = () => {
           repeatType:"reverse",
         }}
         >
-        <Image  w={["40%","60%"]} h={"76vh"} objectFit={"contain"} src={bitcoin} filter={"grayscale(1)"} 
-         m={"auto"} />
+        <Image  w={{base:"50%", lg:"55%", xl:"60%"}} h={"76vh"} objectFit={"contain"} 
+        src={bitcoin} filter={"grayscale(1)"} m={"auto"} />
         </motion.div>
       </HStack>
     </Box>
