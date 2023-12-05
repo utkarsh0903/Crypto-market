@@ -16,7 +16,7 @@ const Home = () => {
         </VStack>
         <motion.div style={{
           height:"80vh",
-          width:"50%"
+          width:"40%"
         }} 
         animate={{
           translateY:"20px"
@@ -27,7 +27,7 @@ const Home = () => {
           repeatType:"reverse",
         }}
         >
-        <Image  w={{base:"50%", lg:"55%", xl:"60%"}} h={"76vh"} objectFit={"contain"} 
+        <Image  w={{base:"60%", lg:"65%", xl:"70%"}} h={"76vh"} objectFit={"contain"} 
         src={bitcoin} filter={"grayscale(1)"} m={"auto"} />
         </motion.div>
       </HStack>
